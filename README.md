@@ -1,66 +1,67 @@
-** Bird Species Observation Dashboard using Streamlit 🦉📊**
- 
- 🔹 Key Features:
-Excel Data Handling 📂
+# Bird Species Observation Dashboard
 
-Reads multiple sheets from an Excel file.
-Cleans and processes data to remove duplicates and missing values.
-Interactive Sidebar 🎛️
+## 📌 Overview
+The **Bird Species Observation Dashboard** is a **Streamlit web application** that enables users to explore and analyze bird observation data collected between **2007 - 2017**. The app loads an **Excel dataset**, processes the data, and provides **interactive visualizations** based on habitat type, season, and bird species.
 
-Dataset Selection: Choose from available sheets in the dataset.
-Habitat Filter: Focus on Forest or Grassland species.
-Show Raw Data: Toggle to display the raw dataset for reference.
-Bird Species Analysis 🐦
+## 🚀 Features
+- **Load & Clean Data**: Reads multiple sheets from an Excel file, removes empty rows/duplicates, and converts date columns.
+- **Data Selection**: Users can choose different datasets (sheets) from the Excel file.
+- **Filters**:
+  - Filter observations by **Habitat Type** (Forest, Grassland).
+  - Filter observations by **Season** (Winter, Spring, Summer, Fall).
+- **Visualizations**:
+  - **Top 10 Bird Species Observed** (Bar Chart & Pie Chart).
+  - **Yearly Bird Observations Trend** (Line Chart).
+- **View Raw Data**: Users can toggle to display the raw dataset.
 
-Displays the top 10 most observed bird species in the selected habitat.
-Uses bar charts to visualize species observation counts.
-Yearly Trend Analysis 📅
+## 🏗️ Installation & Setup
 
-Shows a line chart of bird observations over time.
-Helps identify trends in species sightings across different years.
-User-Friendly Interface 🎨
+### 1️⃣ Prerequisites
+Ensure you have the following installed:
+- **Python 3.x**
+- **pip (Python package manager)**
+- **Streamlit**
 
-Uses Matplotlib & Seaborn for attractive visualizations.
-Streamlit layout ensures a clean and interactive experience.
-🔹 How It Works:
-The app loads the Excel dataset and removes empty or duplicate entries.
-Users select a dataset from the sidebar.
-Data is filtered by habitat (Forest or Grassland).
-The most observed bird species are displayed in a bar chart.
-A line chart visualizes yearly trends in bird observations.
-🔹 Use Cases:
-✅ Birdwatchers & Ecologists: Understand species diversity trends.
-✅ Conservationists: Analyze habitat-based changes in bird populations.
-✅ Students & Researchers: Gain insights from real-world ecological data.
-🔹 Program Workflow:
-Data Loading & Cleaning
+### 2️⃣ Install Required Packages
+```bash
+pip install pandas streamlit matplotlib seaborn
+```
 
-Reads multiple sheets from an Excel file.
-Removes duplicates and missing values for better accuracy.
-Converts date columns to the correct format.
-User Interaction via Sidebar
+### 3️⃣ Run the Application
+```bash
+streamlit run app.py
+```
 
-Users select a dataset (Excel sheet).
-Filters by Habitat Type (Forest/Grassland).
-Option to display raw data for reference.
-Data Visualization
+## 📂 File Structure
+```
+📂 BirdObservationApp
+ ├── app.py                  # Main Streamlit app
+ ├── NCRN_LAND_Bird_Monitoring_Data.xlsx # Data file (place in same folder)
+ ├── README.md               # Documentation
+```
 
-Top Bird Species Observed 📊
-Shows top 10 most observed bird species in the selected habitat.
-Uses a bar chart for visualization.
-Yearly Trends in Bird Observations 📅
-Displays a line chart of bird sightings per year.
-Helps identify fluctuations in bird populations.
-User-Friendly Interface
+## 📝 How to Use
+1. **Run the app** using the Streamlit command.
+2. **Select a dataset** from the sidebar.
+3. **Filter data** by habitat and season.
+4. **View top species** and **yearly trends** using visualizations.
+5. **Toggle raw data** for detailed insights.
 
-Built using Streamlit for easy interaction.
-Uses Seaborn & Matplotlib for high-quality visualizations.
-Optimized for wide-screen viewing with a clean layout.
-🔹 Key Benefits:
-✅ Easy to Use: No coding skills required—just select options and view insights.
-✅ Interactive Data Exploration: Filters help users analyze specific bird habitats.
-✅ Insightful Visualizations: Helps in understanding bird population trends over time.
-✅ Real-World Application: Useful for birdwatchers, ecologists, researchers, and conservationists.
+## 📊 Example Visualizations
+### Top 10 Bird Species Observed (Bar Chart & Pie Chart)
 
-🔹 Summary:
-This dashboard provides a powerful yet simple way to explore bird species data, visualize population trends, and gain insights into habitat-based changes in bird observations. 🚀
+
+### Yearly Bird Observations Trend (Line Chart)
+
+
+## 🛠️ Future Enhancements
+- 🌍 **Geospatial Mapping** of bird species locations
+- 📌 **Additional Filters** (e.g., Bird Family, Rarity Level)
+- 📈 **New Graphs** (Heatmaps, Time-Series Analysis)
+
+## 🤝 Contributing
+If you'd like to contribute, feel free to fork the repository, make changes, and submit a pull request!
+
+## 📜 License
+This project is **open-source** and available under the **MIT License**.
+
